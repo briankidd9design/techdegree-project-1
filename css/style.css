@@ -1,0 +1,114 @@
+/* --------------------------------------------------------
+Style Sheet for Random Quote Generator
+version: 1.0
+last modified: 08.25.2018 by Brian Kidd
+author: Brian Kidd
+email: brian.kidd.one@gmail.com
+website: briankiddmedia.com
+----------------------------------------------------------*/
+body{
+	background-image: url(../images/white-house.jpg);
+	background-position: center center;
+	background-repeat: no repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#quoteBox{
+	position: relative;
+	top: 50px;
+	margin: 0 auto;
+	background-color:#e6e6e6;
+	border-radius: 0px 25px 0px 25px;
+	/*height: 100px;*/
+	height: auto;
+	min-height: 100% !important;
+	width: 70%;
+	font-family: 'Special Elite', cursive;
+}
+
+.image{
+	display: block;
+	max-width: 100%;
+	height: auto;
+	border: 10px solid;
+	border-radius: 25px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 100px;
+}
+
+.quote{
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 1.6em;
+	text-align: center;
+}
+.citation{
+	/*background-color:orange;*/
+	/*color:green;*/
+	/*margin: 0 auto;*/
+	
+}
+.source{
+
+	font-size: 1.25em;
+	margin: 0 auto;
+	padding-bottom:10px;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+}
+.year{
+	margin: 0 auto;
+	
+}
+
+#buttonContainer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: auto;
+}
+
+#loadQuote{
+	position: fixed;
+	bottom: 0;
+	font-size: 1.25em;
+}
+
+.citation{
+	font-style: italic;
+}
+
+@media only screen and (max-width:1470px){
+	.image{
+		width:370px;
+		height: 468px;
+		display: block;
+		max-width: 100%;
+		border: 5px solid;
+		border-radius: 25px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+}
+
+@media only screen and (max-width:768px){
+	
+	
+	#quoteBox{
+		position: relative;
+		top: 50px;
+		margin: 0 auto;
+		background-color:#e6e6e6;
+		border-radius: 0px 25px 0px 25px;
+		/*height: 100px;*/
+		height: auto;
+		min-height: 100% !important;
+		width: 800px;
+		font-family: 'Special Elite', cursive;
+	}
+	
+}
