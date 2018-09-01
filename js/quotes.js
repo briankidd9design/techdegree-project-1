@@ -85,7 +85,7 @@ var quotes = [
 		imgsrc:	"images/barack-obama.jpg"
 	},
 	{
-		quote:  "It is only when the people become ignorant and corrupt, when they degenerate into a populace, that they are incapable of exercising the sovereignty. Usurpation is then an easy attainment, and an usurper soon found. The people themselves become the willing instruments of their own debasement and ruin. Let us, then, look to the great cause, and endeavor to preserve it in full force. Let us by all wise and constitutional measures promote intelligence among the people as the best means of preserving our liberties.",
+		quote:  "It is only when the people become ignorant and corrupt, when they degenerate into a populace, that they are incapable of exercising their sovereignty. Usurpation is then an easy attainment, and an usurper soon found. The people themselves become the willing instruments of their own debasement and ruin. Let us, then, look to the great cause, and endeavor to preserve it in full force. Let us by all wise and constitutional measures promote intelligence among the people as the best means of preserving our liberties.",
 		source: "James Monroe",
 		citation: "First Inaugural Address",
 		date: "March 14, 1817",
