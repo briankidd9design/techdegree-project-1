@@ -1,7 +1,7 @@
 /* --------------------------------------------------------
 Style Sheet for Random Quote Generator
 version: 1.0
-last modified: 08.25.2018 by Brian Kidd
+last modified: 09.01.2018 by Brian Kidd
 author: Brian Kidd
 email: brian.kidd.one@gmail.com
 website: briankiddmedia.com
@@ -9,7 +9,7 @@ website: briankiddmedia.com
 body{
 	background-image: url(../images/white-house.jpg);
 	background-position: center center;
-	background-repeat: no repeat;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 }
@@ -45,12 +45,8 @@ body{
 	font-size: 1.6em;
 	text-align: center;
 }
-.citation{
-	/*background-color:orange;*/
-	/*color:green;*/
-	/*margin: 0 auto;*/
-	
-}
+
+
 .source{
 
 	font-size: 1.25em;
@@ -61,7 +57,10 @@ body{
 }
 .year{
 	margin: 0 auto;
-	
+}
+
+.citation{
+	font-style: italic;
 }
 
 #buttonContainer{
@@ -75,11 +74,37 @@ body{
 	position: fixed;
 	bottom: 0;
 	font-size: 1.25em;
+	border-radius:5px;
 }
 
-.citation{
-	font-style: italic;
+#loadQuote:hover {
+  background-color: rgba(255,255,255,.75);
+  border: 5px solid #000000;
 }
+
+#loadQuote:focus {
+  outline: none;
+}
+
+#stopQuotes{
+	float:right;
+	position: fixed;
+	right: 0;
+	bottom:0;
+	font-size: 1.25em;
+	border-radius:5px;
+}
+
+#stopQuotes:hover {
+  background-color: rgba(255,255,255,.75);
+  border: 5px solid #000000;
+}
+
+#stopQuotes:focus {
+  outline: none;
+}
+
+
 
 @media only screen and (max-width:1470px){
 	.image{
@@ -95,20 +120,19 @@ body{
 	
 }
 
-@media only screen and (max-width:768px){
-	
-	
-	#quoteBox{
-		position: relative;
-		top: 50px;
-		margin: 0 auto;
-		background-color:#e6e6e6;
-		border-radius: 0px 25px 0px 25px;
-		/*height: 100px;*/
-		height: auto;
-		min-height: 100% !important;
-		width: 800px;
-		font-family: 'Special Elite', cursive;
+@media only screen and (max-width:600px){
+	.image{
+		width:500px;
+		height: 633px;
+		display: block;
+		max-width: 100%;
+		border: 5px solid;
+		border-radius: 25px;
+		margin-right: auto;
+		margin-left: auto;
 	}
 	
 }
+
+
+

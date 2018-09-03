@@ -167,13 +167,27 @@ function getRandomQuote() {
 
     return quotes[randomQuote];
 }
+
 /*function creates a random number between 0 and the length of the array of borderColor objects and then accesses the array of borderColor objects 
 by using the random number contained in the randomBorderColor variable */
+
 function getRandomBorderColor(){
 	let randomBorderColor = Math.floor(Math.random() * borderColors.length);
 	
 	return borderColors[randomBorderColor];
 }
+
+let screenTimer;//variable to hold the built-in JavaScript function setInterval();
+
+function startTimer() {//sets the setInterval() timer to exectute the printQuote() function every 15 seconds
+    screenTimer = setInterval(printQuote, 15000);
+}
+
+// clears the setInterval method from the timer variable
+function clearTimer() {//stops the setInterval() function
+    clearInterval(screenTimer);
+}
+
 //function prints the quote to the DOM by inserting elements and attributes into the HTML
 function printQuote() {
     let currentQuote = getRandomQuote();//This variable contains the value that is returned by the getRandomQuote() function
@@ -192,8 +206,15 @@ function printQuote() {
     document.getElementById("quoteBox").innerHTML = html;//This will ultimately print out the information contained in the html variable to the DOM where the quoteBox id is located
 	document.getElementById("presidentImage").innerHTML = presidentImage;//places the html and the currentQuote image source into the DOM
 	document.getElementById("image").style.borderColor = currentBorderColor.color; //places a randomly selected border color accessed from the borderColors object with dot notation around the presidentImage
+	
+	clearTimer();//clears the setInterval() 
+	startTimer();//starts the setInterval()
+
 }
+
 printQuote();//generates an object from the quotes object array, including a quote, source, image and conditionally a citation and date
+
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);/*adds a click event listener to the button with a 
 loadQuote id. When the button in the HTML is clicked, the printQuote() function executes */
+document.getElementById('stopQuotes').addEventListener("click", clearTimer, false);//this button stops the setInterval() function
